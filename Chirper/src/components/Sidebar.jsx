@@ -17,8 +17,8 @@ const Sidebar = () => {
     <>
       {/* <div>Sidebar</div> */}
       <div className="sidebar">
-        {/*Twitter icon */}
-        <ForumIcon />
+        {/*Chirper icon */}
+        <ForumIcon className="sidebar_chirperIcon" />
 
         {/*SidebarOption Component */}
         <SidebarOption active Icon={HomeIcon} text="Home" />
