@@ -1,6 +1,7 @@
 import React from "react";
 import "./ChirperFeed.css";
 import ChirpBox from "./ChirpBox";
+import Post from "./Post";
 
 const ChirperFeed = () => {
   return (
@@ -16,8 +17,13 @@ const ChirperFeed = () => {
         <ChirpBox />
 
         {/*Post */}
+        <Post />
         {/*Post */}
+
+        <Post />
         {/*Post */}
+
+        <Post />
       </div>
     </>
   );
