@@ -24,6 +24,12 @@ const ChirperFeed = () => {
         {/*Post */}
 
         <Post />
+        <Post />
+        <Post />
+        <Post />
+        <Post />
+        <Post />
+        <Post />
       </div>
     </>
   );
