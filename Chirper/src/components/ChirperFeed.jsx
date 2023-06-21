@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./ChirperFeed.css";
 import ChirpBox from "./ChirpBox";
 import Post from "./Post";
+import db from "../../../chirp_creds";
 
 const ChirperFeed = () => {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    //will run code once when feed component loads
+    db.collection("posts").onSnapshot((snapshot) =>
+      setPosts(snapshot.docs.map((doc) => doc.data()))
+    );
+  }, []);
   return (
     <>
       <div className="feed">
