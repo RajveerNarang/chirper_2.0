@@ -20,24 +20,30 @@ const Post = ({
     <>
       <div className="post">
         <div className="post__avatar">
-          <Avatar src="https://i1.sndcdn.com/avatars-MP32mxRRMxRVctJM-rHKmOw-t500x500.jpg" />
+          <Avatar src={avatar} />
         </div>
         <div className="post__body">
           <div className="post__header">
             <div className="post__headerText">
               <h3>
-                Ash Ketchum
+                {/* Ash Ketchum */}
+                {displayName}
                 <span className="post__headerSpecial">
-                  <VerifiedUserIcon className="post__badge" />
-                  @catchup_with_Ash
+                  {verified && <VerifiedUserIcon className="post__badge" />} @
+                  {username}
+                  {/* @catchup_with_Ash */}s
                 </span>
               </h3>
             </div>
             <div className="post__headerDescription">
-              <p>In a complicated Relationship with Pickachu</p>
+              <p>
+                {/* In a complicated Relationship with Pickachu */}
+                {text}
+              </p>
             </div>
           </div>
-          <img src="https://media.tenor.com/ps9eQkmo7lYAAAAC/no-pokemon.gif" />
+          <img src={image} />
+          {/* https://media.tenor.com/ps9eQkmo7lYAAAAC/no-pokemon.gif */}
           <div className="post__footer">
             <ChatBubbleOutlineIcon fontSize="small" />
             <RepeatIcon fontSize="small" />
